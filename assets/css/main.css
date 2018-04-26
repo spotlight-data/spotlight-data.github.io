@@ -1,6 +1,7 @@
 /*color ref!
 dark blue: #1f375b
 light blue: #caf1f3
+rgb(202, 241, 243)
 gold: #fbcb5f
 gray: #b3b3b3
 */
@@ -36,7 +37,9 @@ h2{
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 }
+.w3-top {
 
+}
 	ol, ul {
 		list-style: none;
 	}
