@@ -15,12 +15,13 @@ src: local('Sifonn Pro'), url('../css/SIFONN_PRO.woff') format('woff');
 
 h1{
 	font-family: 'Sifonn Pro', sans-serif;
-	font-size: 60px;
+	font-size: 80px;
 	color: #fbcb5f;
 }
 h2{
 	font-family: 'Sifonn Pro', sans-serif;
 	color: #fbcb5f;
+	font-size: 40px;
 }
 
 .w3-bar, body, p, h3, h4, h5, h6 {
