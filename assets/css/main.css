@@ -1,16 +1,32 @@
+/*color ref!
+dark blue: #1f375b
+light blue: #caf1f3
+gold: #fbcb5f
+gray: #b3b3b3
+*/
+
+
 @font-face {
 font-family: 'Sifonn Pro';
 font-style: normal;
 font-weight: normal;
-src: local('Sifonn Pro'), url('SIFONN_PRO.woff') format('woff');
+src: local('Sifonn Pro'), url('../css/SIFONN_PRO.woff') format('woff');
 }
 
-h1,h2,h3,h4,h5,h6 {
-	font-family: "Sifonn Pro", sans-serif;
+h1{
+	font-family: 'Sifonn Pro', sans-serif;
+	font-size: 60px;
+	color: #fbcb5f;
 }
-.w3-bar, body, p {
+h2{
+	font-family: 'Sifonn Pro', sans-serif;
+	color: #fbcb5f;
+}
+
+.w3-bar, body, p, h3, h4, h5, h6 {
 	font-family: "Open Sans", sans-serif;
 }
+
 .fa-anchor,.fa-coffee {
 	font-size:200px;
 }
@@ -30,6 +46,7 @@ header {
 .nav {
 			background-color: #1f375b;
       overflow: hidden;
+			font-family: 'Sifonn Pro', sans-serif;
   }
 a {
 	text-decoration: none;
