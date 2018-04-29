@@ -6,6 +6,9 @@ gold: #fbcb5f
 gray: #b3b3b3
 */
 
+.info-box {
+	display: none;
+}
 
 @font-face {
 font-family: 'Sifonn Pro';
@@ -83,14 +86,15 @@ a {
 }
 footer {
 	position: relative;
-	left: 0;
 	bottom: 0;
-	height: 50px;
-	width: 100%;
-	overflow: hidden;
 	background-color: #1f375b;
 	color: #caf1f3;
 }
+p .footer {
+	font-size: 10px;
+	color: gray;
+}
+
 
 
 
