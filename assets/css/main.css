@@ -48,7 +48,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	}
 header {
 	background-color: #1f375b;
-	overflow: hidden;
+	overflow:hidden;
+	background-size: cover;
+	min-height: 100%;
+  position: relative;
+	padding:50px 0px 0px 0px;
+
+	height: 100%;
+	min-height: 100%;
+	position: relative;
+	background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
+  background-position: center center !important;
+  background-size: cover !important;
 }
 .nav {
 			background-color: #1f375b;
@@ -95,32 +107,9 @@ p .footer {
 	color: gray;
 }
 
-
-
-
-
-
-@-webkit-keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
-
-@keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
-
 .video {
 	border-right: none;
- border-left: none;
+ 	border-left: none;
 	position: relative;
 	bottom: 0%;
 	left: 0%;
