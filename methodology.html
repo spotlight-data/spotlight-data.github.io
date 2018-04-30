@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Paper | Accountability in the Information Age</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+		<!-- Navbar -->
+		<div class="w3-top">
+			<div class="w3-bar w3-card w3-left-align w3-large">
+				<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large"><i class="fa fa-bars"></i></a>
+				<a href="index.html" class="w3-text-grey w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+				<a href="about.html" class="w3-text-grey w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+				<a href="paper.html" class="w3-text-grey w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Paper</a>
+				<a href="methodology.html" class="w3-white w3-text-grey w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Methodology</a>
+				<a href="vis.html" class="w3-text-grey w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Visualization</a>
+			</div>
+			<!-- Navbar on small screens -->
+			<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+				<a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+				<a href="paper.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Paper</a>
+				<a href="methodology.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Methodology</a>
+				<a href="vis.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Visualization</a>
+			</div>
+		</div>
+
+	<!-- Header -->
+	<header class="w3-container w3-center head" style="padding:50px 16px" >
+	  <h1 class="w3-margin w3-jumbo">Methodology</h1>
+	</header>
+
+  <!-- First Grid -->
+	<div class="w3-row-padding w3-padding-64 w3-container w3-white">
+	  <div class="w3-content">
+	    <div class="w3-twothird">
+	      <h2>Our methods in more detail</h2>
+	      <p class="w3-text-grey">
+          &emsp;In order to gather data in a standardized manner, a we built a web scraping tool. This tool accepts the open data platform of any city that uses <a class="w3-hover-white" href="https://socrata.com/">Socrata</a>, software which offers standardized data hosting.
+				</p>
+        <p class="w3-text-grey">
+          &emsp;In order to get each dataset page, we created an algorithm that deterministically goes through each navigation page of the open data platform, checks if the link fulfills the trait of a dataset and creates a list of all of those links.
+				</p>
+        <p class="w3-text-grey">
+          &emsp;In order to extract most other information, we applied regular expressions on the source code of the necessary webpage. A regular expression (or RegEx) is a sequence of characters that defines a search pattern applicable to strings.
+				</p>
+        <p class="w3-text-grey">
+          &emsp;For any remaining information, we created a script that would extract information from the ‘meta’ section of the dataset file. We used a Python json reader to import the data files, which we then used to extract relevant information about the view count, recency, etc…
+
+				</p>
+	    </div>
+
+	  </div>
+	</div>
+
+
+	<!-- Second Grid -->
+	<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+	  <div class="w3-content">
+	    <div class="w3-twothird w3-right">
+	      <h2>1. QUANTITY</h2>
+	      <h5 class="w3-padding-32">Ranking based on number of datasets published, scaled according to size of city government.
+</h5>
+
+	      <p class="w3-text-grey">The number of datasets, parsed from the html of data platform web page, varies from source to source, since each source had a different consideration about what it considered datasets.</p>
+        <p class="w3-text-grey">For example, some numbers included data visualizations and maps. In order to mitigate this and disallow for double counting, all of the quantity numbers were extracted from pages similar to <a class="w3-hover-white" href="https://data.sfgov.org/browse?limitTo=datasets&utf8">this page</a> on San Francisco’s list of datasets. This filters all of the results to simply the datasets.</p>
+	    </div>
+	  </div>
+	</div>
+
+    <!-- Third Grid -->
+  	<div class="w3-row-padding w3-padding-64 w3-container w3-white">
+  	  <div class="w3-content">
+  	    <div class="w3-twothird">
+  	      <h2>2. RECENCY</h2>
+  	      <h5 class="w3-padding-32">Ranking based on average amount of time passed since updating and creating of datasets on the platform.</h5>
+
+  	      <p class="w3-text-grey">
+  				</p>
+          <p class="w3-text-grey">
+  				</p>
+          <p class="w3-text-grey">
+  				</p>
+
+  	    </div>
+
+  	  </div>
+  	</div>
+
+    	<!-- Fourth Grid -->
+    	<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    	  <div class="w3-content">
+    	    <div class="w3-twothird w3-right">
+    	      <h2>3. Accessibility</h2>
+    	      <h5 class="w3-padding-32">Measured using average dataset download count and number of views.</h5>
+    	      <p class="w3-text-grey"></p>
+            <p class="w3-text-grey"></p>
+
+    	    </div>
+    	  </div>
+    	</div>
+      <!-- Fifth Grid -->
+    	<div class="w3-row-padding w3-padding-64 w3-container w3-white">
+    	  <div class="w3-content">
+    	    <div class="w3-twothird">
+    	      <h2>4. Breadth</h2>
+    	      <h5 class="w3-padding-32">Calculation of the spread and relevancy of datasets available using tags and dataset titles.</h5>
+
+    	      <p class="w3-text-grey"></p>
+            <p class="w3-text-grey"></p>
+
+    	    </div>
+
+    	  </div>
+    	</div>
+
+      <!-- Sixth Grid -->
+      <div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+        <div class="w3-content">
+          <div class="w3-twothird w3-right">
+            <h2>5. Quality</h2>
+            <h5 class="w3-padding-32">Measure of dataset machine readability and adherence to data delivery standards.</h5>
+            <p class="w3-text-grey">
+              &emsp;Project Open Data was founded in the second Obama administration to provide tools for data transparency and accountability for federal agencies. Their website offers a tool for JSON validation, which examines the metadata of a file to see if it is in accordance with federal standards. We evaluated data files for 6 cities in the Bay Area, checking against the Non-Federal Scheme version 1.1. We found that none of the cities passed the test.
+            </p>
+            <p class="w3-text-grey">&emsp;Interestingly, the error results for these 6 cities were identical (with the exception of dataset length). What all of these cities have in common is that their open data platforms are powered by Socrata. From this we conclude that while Socrata enforces a JSON metadata format for all datasets in its open data portals, this format has serious errors and does not meet federal government standards, even for non-federal government.
+            </p>
+            <p class="w3-text-grey">&emsp;See more on our <a class="w3-hover-white" href="https://github.com/akhiljalan/ctsp-open-data/tree/master/CTSP/data/json_validation">github.</p>
+          </div>
+        </div>
+      </div>
+	<!-- Footer -->
+	<footer class="w3-container w3-padding-64 w3-center">
+			<p class ="footer">Github @ <a href="https://github.com/akhiljalan/ctsp-open-data">CTSP Open Data</a></p>
+	 </div>
+	</footer>
+
+
+	</body>
+</html>
