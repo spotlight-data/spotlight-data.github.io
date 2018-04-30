@@ -81,74 +81,84 @@
 			<!--Fifth Grid-->
 							<div class="w3-container w3-light-grey w3-center w3-padding-64">
 								<div class="w3-content">
-									<h1 class="w3-margin w3-xlarge">Accesibility for all Cities</h1>
+									<h1 class="w3-margin w3-xlarge">Accessibility for all Cities</h1>
 									<iframe id="datawrapper-chart-sYP5r" src="//datawrapper.dwcdn.net/sYP5r/1/" scrolling="no" frameborder="0" allowtransparency="true" style="width: 0; min-width: 100% !important;" height="300"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["sYP5r"]={},window.datawrapper["sYP5r"].embedDeltas={"100":300,"200":300,"300":300,"400":300,"500":300,"700":300,"800":300,"900":300,"1000":300},window.datawrapper["sYP5r"].iframe=document.getElementById("datawrapper-chart-sYP5r"),window.datawrapper["sYP5r"].iframe.style.height=window.datawrapper["sYP5r"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["sYP5r"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("sYP5r"==b)window.datawrapper["sYP5r"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
 								</div>
 							</div>
 	<!-- Map Grid -->
 	<div class="w3-row-padding w3-grey w3-padding-64 w3-container">
 	  <div class="w3-content">
-			<div class="w3-twothird w3-left">
-
+			<div class="w3-twothird w3-left info">
+<!--The title + instruction info box-->
 				<div class="info-box toggle" id="def" style="display:block;">
-		      <i class="fa fa-coffee w3-padding-64 w3-margin-right"></i>
 					<h2>Default Text</h2>
-					<p class="w3-padding-large w3-padding-32 w3-center">Info about SF</p>
+					<p class="w3-padding-large w3-padding-32 before">Double click on the location to toggle the data summary for the city.</p>
+<!--the menu for toggling cities with smaller screen-->
+					<ul class="w3-padding-large w3-padding-32 after">
+						<li onclick = "clickCircle('santa rosa');" class="w3-padding-32 w3-hover-white">Santa Rosa</li>
+						<li onclick = "clickCircle('richmond');" class="w3-padding-32 w3-hover-white">Richmond</li>
+						<li onclick = "clickCircle('berkeley');" class="w3-padding-32 w3-hover-white">Berkeley</li>
+						<li onclick = "clickCircle('oakland');" class="w3-padding-32 w3-hover-white">Oakland</li>
+						<li onclick = "clickCircle('menlo park');" class="w3-padding-32 w3-hover-white">Menlo Park</li>
+						<li onclick = "clickCircle('sf');" class="w3-padding-32 w3-hover-white">San Francisco</li>
+					</ul>
 		    </div>
-
+<!--The city's info boxes-->
 			<div class="info-box toggle" id="sf">
-	      <i class="fa fa-coffee w3-padding-64 w3-margin-right"></i>
 				<h2>San Francisco</h2>
 				<p class="w3-border w3-padding-large w3-padding-32 w3-center">Info about SF</p>
 				<div class="w3-border w3-padding-large w3-padding-64 w3-center">
 					<iframe id="datawrapper-chart-R2cKe" src="//datawrapper.dwcdn.net/R2cKe/2/" scrolling="no" frameborder="0" allowtransparency="true" style="width: 0; min-width: 100% !important;" height="643"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["R2cKe"]={},window.datawrapper["R2cKe"].embedDeltas={"100":643,"200":643,"300":643,"400":643,"500":643,"700":643,"800":643,"900":643,"1000":643},window.datawrapper["R2cKe"].iframe=document.getElementById("datawrapper-chart-R2cKe"),window.datawrapper["R2cKe"].iframe.style.height=window.datawrapper["R2cKe"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["R2cKe"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("R2cKe"==b)window.datawrapper["R2cKe"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
 				</div>
+				<button class="after" onclick="clickCircle('sf');">Return to City List</button>
 	    </div>
 
 			<div class="info-box toggle" id="oakland">
-	      <i class="fa fa-coffee w3-padding-64 w3-margin-right"></i>
 				<h2>Oakland</h2>
 				<p class="w3-border w3-padding-large w3-padding-32 w3-center">Info about SF</p>
 				<div class="w3-border w3-center">
-<iframe id="datawrapper-chart-R2cKe" src="//datawrapper.dwcdn.net/R2cKe/2/" scrolling="no" frameborder="0" allowtransparency="true" style="width: 0; min-width: 100% !important;" height="643"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["R2cKe"]={},window.datawrapper["R2cKe"].embedDeltas={"100":643,"200":643,"300":643,"400":643,"500":643,"700":643,"800":643,"900":643,"1000":643},window.datawrapper["R2cKe"].iframe=document.getElementById("datawrapper-chart-R2cKe"),window.datawrapper["R2cKe"].iframe.style.height=window.datawrapper["R2cKe"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["R2cKe"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("R2cKe"==b)window.datawrapper["R2cKe"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
-</div>
+					<iframe id="datawrapper-chart-R2cKe" src="//datawrapper.dwcdn.net/R2cKe/2/" scrolling="no" frameborder="0" allowtransparency="true" style="width: 0; min-width: 100% !important;" height="643"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["R2cKe"]={},window.datawrapper["R2cKe"].embedDeltas={"100":643,"200":643,"300":643,"400":643,"500":643,"700":643,"800":643,"900":643,"1000":643},window.datawrapper["R2cKe"].iframe=document.getElementById("datawrapper-chart-R2cKe"),window.datawrapper["R2cKe"].iframe.style.height=window.datawrapper["R2cKe"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["R2cKe"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("R2cKe"==b)window.datawrapper["R2cKe"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
+				</div>
+				<button class="after" onclick="clickCircle('oakland');">Return to City List</button>
 	    </div>
 			<div class="info-box toggle" id="richmond">
-				<i class="fa fa-coffee w3-padding-64 w3-margin-right"></i>
 				<h2>Richmond</h2>
 				<p class="w3-border w3-padding-large w3-padding-32 w3-center">Info about SF</p>
 				<div class="w3-border w3-padding-large w3-padding-64 w3-center">
 					<iframe id="datawrapper-chart-u2cMZ" src="//datawrapper.dwcdn.net/u2cMZ/1/" scrolling="no" frameborder="0" allowtransparency="true" style="width: 0; min-width: 100% !important;" height="643"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["u2cMZ"]={},window.datawrapper["u2cMZ"].embedDeltas={"100":643,"200":643,"300":643,"400":643,"500":643,"700":643,"800":643,"900":643,"1000":643},window.datawrapper["u2cMZ"].iframe=document.getElementById("datawrapper-chart-u2cMZ"),window.datawrapper["u2cMZ"].iframe.style.height=window.datawrapper["u2cMZ"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["u2cMZ"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("u2cMZ"==b)window.datawrapper["u2cMZ"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
 				</div>
+				<button class="after" onclick="clickCircle('richmond');">Return to City List</button>
+
 			</div>
 			<div class="info-box toggle" id="santa rosa">
-				<i class="fa fa-coffee w3-padding-64 w3-margin-right"></i>
 				<h2>Santa Rosa</h2>
 				<p class="w3-border w3-padding-large w3-padding-32 w3-center">Info about SF</p>
 				<div class="w3-border w3-padding-large w3-padding-64 w3-center">
 					<iframe id="datawrapper-chart-GegbM" src="//datawrapper.dwcdn.net/GegbM/1/" scrolling="no" frameborder="0" allowtransparency="true" style="width: 0; min-width: 100% !important;" height="644"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["GegbM"]={},window.datawrapper["GegbM"].embedDeltas={"100":644,"200":644,"300":644,"400":644,"500":644,"700":644,"800":644,"900":644,"1000":644},window.datawrapper["GegbM"].iframe=document.getElementById("datawrapper-chart-GegbM"),window.datawrapper["GegbM"].iframe.style.height=window.datawrapper["GegbM"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["GegbM"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("GegbM"==b)window.datawrapper["GegbM"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
 				</div>
+				<button class="after" onclick="clickCircle('santa rosa');">Return to City List</button>
 			</div>
 			<div class="info-box toggle" id="menlo park">
-				<i class="fa fa-coffee w3-padding-64 w3-margin-right"></i>
 				<h2>Menlo Park</h2>
 				<p class="w3-border w3-padding-large w3-padding-32 w3-center">Info about SF</p>
 				<div class="w3-border w3-padding-large w3-padding-64 w3-center">
 <iframe id="datawrapper-chart-R2cKe" src="//datawrapper.dwcdn.net/R2cKe/2/" scrolling="no" frameborder="0" allowtransparency="true" style="width: 0; min-width: 100% !important;" height="643"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["R2cKe"]={},window.datawrapper["R2cKe"].embedDeltas={"100":643,"200":643,"300":643,"400":643,"500":643,"700":643,"800":643,"900":643,"1000":643},window.datawrapper["R2cKe"].iframe=document.getElementById("datawrapper-chart-R2cKe"),window.datawrapper["R2cKe"].iframe.style.height=window.datawrapper["R2cKe"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["R2cKe"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("R2cKe"==b)window.datawrapper["R2cKe"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
 				</div>
+				<button class="after" onclick="clickCircle('menlo park');">Return to City List</button>
 			</div>
 			<div class="info-box toggle" id="berkeley">
-				<i class="fa fa-coffee w3-padding-64 w3-margin-right"></i>
 				<h2>Berkeley</h2>
 				<p class="w3-border w3-padding-large w3-padding-32 w3-center">Info about Berkeley</p>
 				<div class="w3-border w3-padding-large w3-padding-64 w3-center">
 					<iframe id="datawrapper-chart-jWG3k" src="//datawrapper.dwcdn.net/jWG3k/1/" scrolling="no" frameborder="0" allowtransparency="true" style="width: 0; min-width: 100% !important;" height="644"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["jWG3k"]={},window.datawrapper["jWG3k"].embedDeltas={"100":644,"200":644,"300":644,"400":644,"500":644,"700":644,"800":644,"900":644,"1000":644},window.datawrapper["jWG3k"].iframe=document.getElementById("datawrapper-chart-jWG3k"),window.datawrapper["jWG3k"].iframe.style.height=window.datawrapper["jWG3k"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["jWG3k"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("jWG3k"==b)window.datawrapper["jWG3k"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
 				</div>
+				<button class="after" onclick="clickCircle('berkeley');">Return to City List</button>
 			</div>
 		</div>
 
-	    <div class="w3-third w3-right map">
-			<img class = "map" src="assets/bayareadarkdots.png" usemap="#image-map">
+<!--html map element-->
+	    <div class="w3-third w3-right">
+			<img id="map" src="assets/bayareadarkdots.png" usemap="#image-map">
 			<map name="image-map">
 			    <area onclick = "clickCircle('santa rosa');" alt="Santa Rosa" title="Santa Rosa" coords="365,120,90" shape="circle">
 			    <area onclick = "clickCircle('richmond');" alt="Richmond" title="Richmond" coords="424,289,19" shape="circle">
