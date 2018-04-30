@@ -26,6 +26,7 @@ h2{
 	font-family: 'Sifonn Pro', sans-serif;
 	color: #fbcb5f;
 	font-size: 40px;
+	text-transform: uppercase;
 }
 
 .w3-bar, body, p, h3, h4, h5, h6 {
@@ -40,28 +41,11 @@ h2{
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 }
-.w3-top {
 
-}
-	ol, ul {
+ol, ul {
 		list-style: none;
 	}
-header {
-	background-color: #1f375b;
-	overflow:hidden;
-	background-size: cover;
-	min-height: 100%;
-  position: relative;
-	padding:50px 0px 0px 0px;
 
-	height: 100%;
-	min-height: 100%;
-	position: relative;
-	background-repeat: no-repeat !important;
-  background-attachment: scroll !important;
-  background-position: center center !important;
-  background-size: cover !important;
-}
 .nav {
 			background-color: #1f375b;
       overflow: hidden;
@@ -84,15 +68,6 @@ a {
 			color: #1f375b;
   }
 
-.Site {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-.Site-content {
-  flex: 1;
-}
 .content{
 	padding: 14px 16px;
 }
@@ -102,41 +77,84 @@ footer {
 	background-color: #1f375b;
 	color: #caf1f3;
 }
-p .footer {
-	font-size: 10px;
-	color: gray;
+.footer a:hover{
+	color: #f3f3f3;
+}
+.head{
+	background-color: #1f375b;
+	padding:50px 0px 0px 0px;
 }
 
-.video {
-	border-right: none;
- 	border-left: none;
-	position: relative;
-	bottom: 0%;
-	left: 0%;
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-	background: #000;
-	/*
-  position: absolute;
-  width: 100%;
-  overflow: hidden;
-  z-index: 2; */
+.w3-bar{
+	background-color: rgb(31, 55, 91);
 }
-.video:before {
-  content: '';
-  display: block;
-  position: absolute;
-  z-index: 2;
-  background-image: linear-gradient(rgba(31, 55, 91, 0), rgba(31, 55, 91, 1));
-  width: 100%;
-  height: 75%;
-  top: 25%;
-  left: 0;
+/* Default to hide the video on all devices */
+#video{display:none}
+
+/* Default to display the image on all devices */
+#videosubstitute{display:block;width:auto;height:100%;}
+
+html, body {
+	 height: 100%;
+	 margin: 0;
+}
+#fullScreenDiv{
+	 width:100%;
+	 min-height: 100%;
+	/* Set the height to match that of the viewport. 
+	 height: 100vh;*/
+	 width: auto;
+	 padding:0!important;
+	 margin: 0!important;
+	 background-color: white;
+	 position: relative;
+
+	 background-image: linear-gradient(rgba(31, 55, 91, 0), rgba(31, 55, 91, 1));
+}
+#video{
+	 width: 100vw;
+	 height: auto;
+	 object-fit: cover;
+	 left: 0px;
+	 top: 0px;
+	 z-index: 1;
+
+	 opacity: 0.35;
+	 overflow: hidden;
 }
 
-video {
-  width: 100%;
-  margin-top: -15%;
-  opacity: 0.50;
+@media (min-aspect-ratio: 16/9) {
+ #video{
+	 height: 150%;
+	 top: -100%;
+ }
+ #videosubstitute{
+	 display:block;
+	 width: 100%;
+	 height: auto;}
+}
+
+@media (max-aspect-ratio: 16/9) {
+ #video {
+	 width: 150%;
+	 left: -100%;
+ }
+ #videosubstitute{display:block;width:auto;height:100%;}
+}
+/*if there is 992  pixels or more, then display the video but hide the image*/
+@media only screen and (min-width : 992px) {
+#video{display:block;}
+#videosubstitute{display:none}
+}
+
+/* The container for our text and stuff */
+#messageBox{
+	 position: absolute;
+	 top: 30%;
+	 left: 0;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 width: 100%;
+	 height:70%;
 }
