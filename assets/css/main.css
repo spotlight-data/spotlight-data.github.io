@@ -105,6 +105,10 @@ html, body {
 	 height: 100%;
 	 margin: 0;
 }
+.icon{
+	max-width: 70%;
+  height: auto;
+}
 #fullScreenDiv{
 	 width:100%;
 	 min-height: 100%;
