@@ -27,3 +27,7 @@ function clickCircle(divId){
     def.style.display = "block";
   }
 }
+
+function openWin() {
+    window.open("https://github.com/akhiljalan/ctsp-open-data/tree/master/Downloadable_csvs");
+}
