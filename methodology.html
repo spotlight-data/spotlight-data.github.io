@@ -41,17 +41,20 @@
 	    <div class="w3-twothird">
 	      <h2>Our methods in more detail</h2>
 	      <p class="w3-text-grey">
-          &emsp;In order to gather data in a standardized manner, a we built a web scraping tool. This tool accepts the open data platform of any city that uses <a class="w3-hover-white" href="https://socrata.com/">Socrata</a>, software which offers standardized data hosting.
-				</p>
+          &emsp;Based on a meeting with the city of Berkeley IT department and research on government open data policies we determined five key categories that we could use to compare the open data platforms of different local governments in the Bay Area — quantity, recency, accessibility, breadth and quality.
+        </p>
         <p class="w3-text-grey">
-          &emsp;In order to get each dataset page, we created an algorithm that deterministically goes through each navigation page of the open data platform, checks if the link fulfills the trait of a dataset and creates a list of all of those links.
-				</p>
+          &emsp;To select the cities to compare, we decided to focus on the governments which use Socrata. Socrata is a software company which many cities use to power their open data platforms, including San Francisco and Oakland. Next, we considered various statistics we could collect about each city’s data platform, and how these could inform our metrics. 
+        </p>
         <p class="w3-text-grey">
-          &emsp;In order to extract most other information, we applied regular expressions on the source code of the necessary webpage. A regular expression (or RegEx) is a sequence of characters that defines a search pattern applicable to strings.
-				</p>
+          &emsp;Having decided on a set of cities and metrics by which to assess them, we built a collection of web-scraping algorithms. These deterministically searched from the navigation page of an open data platform, “clicking” every possible link and checking to see if the link fulfills the “dataset” criterion. We applied Regular Expressions (RegEx) on each webpage’s source code and link to guide the scraper’s search. 
+        </p>
         <p class="w3-text-grey">
-          &emsp;For any remaining information, we created a script that would extract information from the ‘meta’ section of the dataset file. We used a Python json reader to import the data files, which we then used to extract relevant information about the view count, recency, etc…
-				</p>
+          &emsp;Once we had a list of links to the datasets published by each city, we were able to extract more information from the corresponding JSON (Javascript Object Notation) files. Our scripts extracted relevant information from the metadata section of each file, such as view count and recency. 
+        </p>
+        <p class="w3-text-grey">
+          &emsp;Finally, we organized these statistics by city and dataset and wrote our results to files for further analysis. We discuss our  analytical methods below. 
+        </p>
 	    </div>
 	  </div>
 	</div>
