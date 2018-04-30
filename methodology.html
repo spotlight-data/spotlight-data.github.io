@@ -182,10 +182,10 @@
             <h2>5. Quality</h2>
             <h5 class="w3-padding-32">Measure of dataset machine readability and adherence to data delivery standards.</h5>
             <p class="w3-text-grey">
-              &emsp;Project Open Data was founded in the second Obama administration to provide tools for data transparency and accountability for federal agencies. Their website offers a tool for JSON validation, which examines the metadata of a file to see if it is in accordance with federal standards. We evaluated data files for the 6 cities, checking against the Non-Federal Scheme version 1.1. We found that none of the cities passed the test.
+              &emsp;Project Open Data was founded in the second Obama administration to provide tools for data transparency and accountability for federal agencies. Their website offers a tool for JSON validation, which examines the metadata of a file to see if it is in accordance with federal standards. We evaluated data files for the 6 cities, checking against the Non-Federal Scheme version 1.1. 
             </p>
             <p class="w3-text-grey">
-              &emsp;Interestingly, the error results for these 6 cities were identical (with the exception of dataset length). From this we conclude that while Socrata enforces a JSON metadata format for all datasets in its open data portals, this format has errors and does not meet federal government, or non-federal government, standards. 
+              &emsp;All of the cities we examined used Socrata, which natively supports data.json and extended metadata fields. However, when we checked JSON metadata of each city at https://labs.data.gov/dashboard/validate, we ran into errors and it is unclear what caused them. We conclude that the issue needs further study, and that the inactive state of Project Open Data likely caused the issue. 
             </p>
             <p class="w3-text-grey">&emsp;See more on our <a class="w3-hover-white" href="https://github.com/akhiljalan/ctsp-open-data/tree/master/CTSP/data/json_validation">github.</p>
           </div>
