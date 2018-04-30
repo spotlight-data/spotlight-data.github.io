@@ -102,8 +102,8 @@ html, body {
 #fullScreenDiv{
 	 width:100%;
 	 min-height: 100%;
-	/* Set the height to match that of the viewport. */
-	 height: 100vh;
+	/* Set the height to match that of the viewport.
+	 height: 100vh; */
 	 width: auto;
 	 padding:0!important;
 	 margin: 0!important;
